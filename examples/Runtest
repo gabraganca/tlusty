@@ -1,0 +1,19 @@
+cd ./hhe
+$TLUSTY/RTlusty hhe35lt
+$TLUSTY/RTlusty hhe35nc hhe35lt
+$TLUSTY/RTlusty hhe35nl hhe35nc
+
+cd ../cwd
+$TLUSTY/RTlusty t100g80l
+$TLUSTY/RTlusty t100g80n t100g80l
+
+cd ../optab
+$TLUSTY/RTlusty s4545
+
+cd ../disk
+$TLUSTY/RTlusty d1lt
+$TLUSTY/RTlusty d1nc d1lt
+$TLUSTY/RTLusty d1nl d1nc
+
+cd ../bstar
+$TLUSTY/RTlusty BGA20000g400v2a BGA20000g400v2

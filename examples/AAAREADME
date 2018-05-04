@@ -1,0 +1,23 @@
+This directory contains 5 subdirectories for 5 test cases,
+described in detail in Paper III, Chap. 6.
+
+All the tests can be run using the shell script Runtest,
+located in this directory. This script does all the
+necessary links to atomic data. It calls another script,
+RTlusty, that is present in the main directory of the Tlusty 
+distribution (one directory above the present).
+
+The only action the user needs to do is to set up
+an environment variable TLUSTY that specifies this directory.
+For instance, if the tar file with the Tlusty distribution,
+tlusty205.tar was extracted in the home directory,
+thus creating the main Tlusty directory as   ~/tlusty205
+then one has to set
+
+aetenv TLUSTY ~/tlusty205
+
+
+The individual subdirectories contain all the necesary
+input files, plus some output files with names *.orig
+for comparison of the user's run to a run performed on
+Ivan Hubeny's MacBook Pro laptop.

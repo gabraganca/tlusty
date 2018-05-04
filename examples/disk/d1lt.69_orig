@@ -1,0 +1,31 @@
+   0   1       0.21       0.21       FORMAL SOLUTION
+   1   2       0.27       0.06         LINEARIZATION
+   1   1       0.32       0.04       FORMAL SOLUTION
+   2   2       0.36       0.04         LINEARIZATION
+   2   1       0.40       0.04       FORMAL SOLUTION
+   3   2       0.44       0.05         LINEARIZATION
+   3   1       0.48       0.04       FORMAL SOLUTION
+   4   2       0.52       0.04         LINEARIZATION
+   4   1       0.56       0.03       FORMAL SOLUTION
+   5   2       0.58       0.02         LINEARIZATION
+   5   1       0.62       0.04       FORMAL SOLUTION
+   6   2       0.64       0.02         LINEARIZATION
+   6   1       0.67       0.04       FORMAL SOLUTION
+   6   1       0.72       0.05       FORMAL SOLUTION
+   7   2       0.76       0.04         LINEARIZATION
+   7   1       0.80       0.04       FORMAL SOLUTION
+   8   2       0.82       0.02         LINEARIZATION
+   8   1       0.86       0.04       FORMAL SOLUTION
+   9   2       0.88       0.02         LINEARIZATION
+   9   1       0.92       0.04       FORMAL SOLUTION
+  10   2       0.94       0.02         LINEARIZATION
+  10   1       0.98       0.04       FORMAL SOLUTION
+  10   1       1.03       0.05       FORMAL SOLUTION
+  11   2       1.08       0.04         LINEARIZATION
+  11   1       1.11       0.04       FORMAL SOLUTION
+  12   2       1.14       0.02         LINEARIZATION
+  12   1       1.18       0.04       FORMAL SOLUTION
+  13   2       1.21       0.03         LINEARIZATION
+  13   1       1.25       0.04       FORMAL SOLUTION
+  14   2       1.27       0.03         LINEARIZATION
+  14   1       1.32       0.05       FORMAL SOLUTION

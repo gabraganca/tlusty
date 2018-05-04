@@ -1,0 +1,3 @@
+cp ap00t9750g40k2.dat kurucz9750g40.7
+cp cool.5 kurucz9750g40.5
+$TLUSTY/RSynspec kurucz9750g40 fort.55.lin data/linelist.test

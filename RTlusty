@@ -1,0 +1,48 @@
+#!/bin/bash
+#
+#       shell script to run tlusty 
+#
+#       print syntax if no parameters specified
+#
+   if [ $# -lt 1 ]
+   then
+     echo Usage:   
+     echo RTlusty  model core name  [core name of  starting model]
+     exit
+   fi
+#
+# check that the starting model exists
+#
+   if [ $# -eq 2 ]
+   then
+     if [ -e $2.7 ] ; then
+         echo STARTING MODEL: $2.7;
+      else
+         echo FILE $2.7 does not exist, therefore quitting ;
+         exit;
+     fi
+#
+     rm -f fort.8
+     cp $2.7 fort.8
+   fi
+#
+#     link the "data" directory
+#
+   ln -s -f $TLUSTY/data data
+#
+#     run tlusty
+#
+   MOD=$1
+   $TLUSTY/tlusty/tlusty.exe  < $MOD.5 > $MOD.6
+#
+#     save important output files
+#
+   cp fort.7 $MOD.7
+   cp fort.9 $MOD.9
+   cp fort.69 $MOD.69
+   cp fort.13 $MOD.13
+#
+   echo "COMPUTED MODEL  $MOD  FINISHED!"
+   date
+#
+

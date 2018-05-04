@@ -1,0 +1,59 @@
+#!/bin/bash
+#
+#       shell script to run Synspec
+#
+#       print syntax if no parameters specified
+#
+   if [ $# -lt 1 ]
+   then
+     echo Usage:   
+     echo RSynspec  model_core_name  add_input  line_list 
+     exit
+   fi
+#
+# check that the input model exists
+#
+     if [ -e $1.7 ] ; then
+         echo  ;
+      else
+         echo FILE $1.7 does not exist, therefore quitting ;
+         exit;
+     fi
+#
+     rm -f fort.8
+     cp $1.7 fort.8
+#
+# files fort.55 and fort.19
+#
+     if [ -e $2 ] ; then
+         ln -s -f $2 fort.55
+      else
+         echo ;
+     fi
+#
+     if [ -e $3 ] ; then
+         ln -s -f $3 fort.19
+      else
+         echo ;
+     fi
+#
+#     link the "data" directory
+#
+   ln -s -f $TLUSTY/data data
+#
+#     run synspec
+#
+   MOD=$1
+   $TLUSTY/synspec/synspec.exe  < $MOD.5 > $MOD.log
+#
+#     save important output files
+#
+   cp fort.7 $MOD.spec
+   cp fort.17 $MOD.cont
+   cp fort.12 $MOD.iden
+   cp fort.16 $MOD.eqws
+#
+   echo "COMPUTED SPECTRUM FOR   $MOD  FINISHED!"
+   date
+#
+

@@ -1,0 +1,13 @@
+This is the main directory of the TLUSTY distribution. It contains
+five subdirectories:
+
+./tlusty   -  TLUSTY source files, IDL ;program PCONV
+./synspec  -  SYNSPEC source files
+./pretlus  -  source files for the auxilioaruy program PRETLUS
+./data     -  neceassry atomic data
+./manuals  -  PDF files for 3 papers with the 3-volume User's guide
+
+The direcftory also contains two shell (bash) script files:
+
+RTlusty   -  script for runnimg TLUSTY
+RSynspec  -  script for runnimhg SYNSPEC  

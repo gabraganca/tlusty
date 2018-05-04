@@ -1,0 +1,33 @@
+0.8 1.e-9  0.01 2        ! XMSTAR,XMDOT,RSTAR,RELDST
+ F  F              ! LTE,  LTGRAY
+ 'param'                ! no change of general optional parameters
+*-----------------------------------------------------------------
+* frequencies
+ 50                ! NFREAD
+*-----------------------------------------------------------------
+* data for atoms   
+*
+ 8                 ! NATOMS
+* mode abn modpf
+    2   0   0
+    2   0   0
+    0   0   0
+    0   0   0
+    0   0   0
+    1   0   0
+    1   0   0
+    1   0   0
+*-----------------------------------------------------------------
+* data for ions
+*
+*iat    iz   nlevs  ilast ilvlin  nonstd typion  filei
+*
+   1     0     9      0    100      0    ' H 1' './data/h1.dat'
+   1     1     1      1      0      0    ' H 2' ' '
+   2     0    14      0    100      0    'He 1' './data/he1.dat'
+   2     1    14      0    100      0    'He 2' './data/he2.dat'
+   2     2     1      1      0      0    'He 3' ' '
+   0     0     0     -1      0      0    '    ' ' '
+*
+* end
+
